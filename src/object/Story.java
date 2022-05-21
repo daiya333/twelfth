@@ -5,63 +5,60 @@ import java.util.Random;
 public class Story {
     public static void main(String[] args) {
     	
-    	Hero h = new Hero();
-    	
-    	Magician m = new Magician();
-		
-    	
-    	Slime s = new Slime();
-    	
-    	
-    	Zombie z = new Zombie();
+    	Charactor [] charactors = new Charactor[2];
+    	charactors[0] = new Hero();
+    	charactors[1] = new Magician();
+    	Creature [] creatures = new Creature[2]; 
+    	creatures[0] = new Slime();
+    	creatures[1] = new Zombie();
     	
     	
 		
-		h.setName("ゆうた");
-		System.out.println("勇者の名前は" + h.getName());
-	    h.setHp(5);
-		System.out.println("勇者のHPは" + h.getHp());
-		h.setOp(1);
-		System.out.println("勇者のOPは" + h.getOp());
+		charactors[0].setName("ゆうた");
+		System.out.println("勇者の名前は" + charactors[0].getName());
+		charactors[0].setHp(5);
+		System.out.println("勇者のHPは" + charactors[0].getHp());
+		charactors[0].setOp(1);
+		System.out.println("勇者のOPは" + charactors[0].getOp());
 		
 		System.out.println("-------------------");
 		System.out.println("-------------------");
 		
-		m.setName("しずか");
-		System.out.println("魔法使いの名前は" + m.getName());
-		m.setHp(5);
-		System.out.println("魔法使いのHPは" + m.getHp());
-		m.setOp(1);
-		System.out.println("魔法使いのOPは" + m.getOp());
+		charactors[1].setName("しずか");
+		System.out.println("魔法使いの名前は" + charactors[1].getName());
+		charactors[1].setHp(5);
+		System.out.println("魔法使いのHPは" + charactors[1].getHp());
+		charactors[1].setOp(1);
+		System.out.println("魔法使いのOPは" + charactors[1].getOp());
 		
 		
 		System.out.println("-------------------");
 		System.out.println("-------------------");
 	
-		s.setName("スライム");
-		System.out.println("魔物の名前は" + s.getName());
-		s.setHp(5);
-		System.out.println(s.getName() + "のHPは" + s.getHp());
-		s.setOp(1);
-		System.out.println(s.getName() + "のOPは" + s.getOp());
+		creatures[0].setName("スライム");
+		System.out.println("魔物の名前は" + creatures[0].getName());
+		creatures[0].setHp(5);
+		System.out.println(creatures[0].getName() + "のHPは" + creatures[0].getHp());
+		creatures[0].setOp(1);
+		System.out.println(creatures[0].getName() + "のOPは" + creatures[0].getOp());
 		
 		
 		System.out.println("-------------------");
 		System.out.println("-------------------");
 		
-		z.setName("ゾンビ");
-		System.out.println("魔物の名前は" + z.getName());
-		z.setHp(5);
-		System.out.println(z.getName() + "のHPは" + z.getHp());
-		z.setOp(1);
-		System.out.println(z.getName() + "のOPは" + z.getOp());
+		creatures[1].setName("ゾンビ");
+		System.out.println("魔物の名前は" + creatures[1].getName());
+		creatures[1].setHp(5);
+		System.out.println(creatures[1].getName() + "のHPは" + creatures[1].getHp());
+		creatures[1].setOp(1);
+		System.out.println(creatures[1].getName() + "のOPは" + creatures[1].getOp());
 		
 		
 		System.out.println("-------------------");
 		System.out.println("-------------------");
     	
     	
-		Battle.battle(h, m, s, z);
+		Battle.battle(charactors, creatures);
 		
     }  
 }
