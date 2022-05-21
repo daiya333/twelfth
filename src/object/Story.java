@@ -8,9 +8,10 @@ public class Story {
     	Charactor [] charactors = new Charactor[2];
     	charactors[0] = new Hero();
     	charactors[1] = new Magician();
-    	Creature [] creatures = new Creature[2]; 
+    	Creature [] creatures = new Creature[3]; 
     	creatures[0] = new Slime();
     	creatures[1] = new Zombie();
+    	creatures[2] = new Dragon();
     	
     	
 		
@@ -52,6 +53,17 @@ public class Story {
 		System.out.println(creatures[1].getName() + "‚ÌHP‚Í" + creatures[1].getHp());
 		creatures[1].setOp(1);
 		System.out.println(creatures[1].getName() + "‚ÌOP‚Í" + creatures[1].getOp());
+		
+		
+		System.out.println("-------------------");
+		System.out.println("-------------------");
+		
+		creatures[2].setName("ƒhƒ‰ƒSƒ“");
+		System.out.println("–‚•¨‚Ì–¼‘O‚Í" + creatures[2].getName());
+		creatures[2].setHp(5);
+		System.out.println(creatures[2].getName() + "‚ÌHP‚Í" + creatures[2].getHp());
+		creatures[2].setOp(1);
+		System.out.println(creatures[2].getName() + "‚ÌOP‚Í" + creatures[2].getOp());
 		
 		
 		System.out.println("-------------------");

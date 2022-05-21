@@ -20,7 +20,11 @@ public class Battle {
 				    	} else if (ifCr2(creatures)) {
 				    		battleIn(creatures, ch);
 			    	    } else {
-			    	    	ch.attack(creatures[0]);
+			    	    	if(creatures[0].hp > 0) {
+			    	    	    ch.attack(creatures[0]);
+			    	        } else {
+			    	        	break;
+			    	        }
 			    	    }
 				    
 			    	
@@ -38,7 +42,11 @@ public class Battle {
 				    	} else if (ifCh2(charactors)) {
 				    		battleIn2(charactors, cr);
 			    	    } else {
-			    	    	cr.attack(charactors[0]);
+			    	    	if(charactors[0].hp > 0) {
+			    	    	    cr.attack(charactors[0]);
+			    	        } else {
+			    	        	break;
+			    	        }
 			    	    }
 				    
 			        System.out.println("-------------------");
