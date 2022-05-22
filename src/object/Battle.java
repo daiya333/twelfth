@@ -53,6 +53,12 @@ public class Battle {
 			    }
 			}
 	        
+	        if(judge(charactors)) {
+	        	System.out.println("—EŽÒ‚½‚¿‚Í‘S–Å‚µ‚½");
+	        } else if(judge2(creatures)) {
+	        	System.out.println("‘S‚Ä‚Ì“G‚ð“|‚µ‚½");
+	        }
+	        
 		}
 	}
 	
@@ -157,6 +163,34 @@ public class Battle {
     	        cr.attack(charactors[rand.nextInt(charactors.length - j)]);
     	        break;
     	    } 
+	    }
+	}
+	
+	public static boolean judge(Charactor charactors[]) {
+		int count = 0;
+		for (int i = 0; i < charactors.length; i++) {
+		    if(charactors[i].hp > 0) {
+			    count++;
+		    }
+		}
+		if (count == 0) {
+		    return true;
+		}else {
+			return false;
+	    }
+	}
+	
+	public static boolean judge2(Creature creatures[]) {
+		int count = 0;
+		for (int i = 0; i < creatures.length; i++) {
+		    if(creatures[i].hp > 0) {
+			    count++;
+		    }
+		}
+		if (count == 0) {
+		    return true;
+		}else {
+			return false;
 	    }
 	}
 	
