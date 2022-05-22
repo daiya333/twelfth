@@ -11,9 +11,9 @@ public class Battle {
 				if (ch.hp > 0) {
 					
 				    if (ifCr(creatures)) {
-				     ch.attack(creatures[rand.nextInt(creatures.length)]);
-				 } else if (whileCr(creatures)) {
-				    battleIn(creatures, ch);
+				        ch.attack(creatures[rand.nextInt(creatures.length)]);
+				   } else if (whileCr(creatures)) {
+				        battleIn(creatures, ch);
 			    	    } else {
 			    	    	break;
 			    	    }
@@ -25,10 +25,10 @@ public class Battle {
 	        for (Creature cr : creatures) {
 				if (cr.hp > 0) {
 					
-						if (ifCh(charactors)) {
-				    	    cr.attack(charactors[rand.nextInt(charactors.length)]);
-				    	} else if (whileCh(charactors)) {
-				    		battleIn2(charactors, cr);
+				    if (ifCh(charactors)) {
+				        cr.attack(charactors[rand.nextInt(charactors.length)]);
+				    } else if (whileCh(charactors)) {
+				    	 battleIn2(charactors, cr);
 			    	    } else {
 			    	    	break;
 			    	    }
