@@ -10,10 +10,10 @@ public class Battle {
 			for (Charactor ch : charactors) {
 				if (ch.hp > 0) {
 					
-				if (ifCr(creatures)) {
-				    	    ch.attack(creatures[rand.nextInt(creatures.length)]);
-				    	} else if (whileCr(creatures)) {
-				    		battleIn(creatures, ch);
+				    if (ifCr(creatures)) {
+				     ch.attack(creatures[rand.nextInt(creatures.length)]);
+				 } else if (whileCr(creatures)) {
+				    battleIn(creatures, ch);
 			    	    } else {
 			    	    	break;
 			    	    }
