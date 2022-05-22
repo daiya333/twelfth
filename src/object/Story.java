@@ -1,7 +1,5 @@
 package object;
 
-import java.util.Random;
-
 public class Story {
     public static void main(String[] args) {
     	
